@@ -1,0 +1,404 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Georgia, serif;
+    overflow-x:hidden;
+    background:#120718;
+}
+
+/* BARRE HAUT */
+
+.barre-haut{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:120px;
+    padding:20px 50px;
+    border-bottom:1px solid #c79f4a;
+    z-index:100;
+}
+
+/* LOGO */
+
+.logo img{
+    width:110px;
+    display:block;
+}
+
+/* LIENS */
+
+.liens-page{
+    display: flex;
+    margin-left: 200px;
+    gap:40px;
+}
+
+.liens-page a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    transition:0.3s;
+}
+
+.liens-page a:hover{
+    color:#d9b15f;
+}
+
+/* PREMIÈRE PARTIE */
+
+.premiere-partie{
+    position:relative;
+
+    width:100%;
+    height:100vh;
+}
+
+.image-fond{
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.couche-sombre{
+    position:absolute;
+    inset:0;
+    background:rgba(16, 5, 24, 0.72);
+}
+
+.contenu-principal{
+    position:relative;
+
+    z-index:2;
+
+    padding-top:220px;
+    padding-left:80px;
+
+    max-width:600px;
+}
+
+.contenu-principal h1{
+    color:#e5c06b;
+
+    font-size:60px;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+}
+
+.contenu-principal p{
+    color:white;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+}
+
+/* BOUTONS */
+
+button{
+    background:#4b0b72;
+
+    color:#f5d27c;
+
+    border:1px solid #c79f4a;
+
+    padding:12px 28px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+button:hover{
+    background:#6b1ea1;
+}
+
+/* DEUXIÈME PARTIE */
+
+.deuxieme-partie{
+    position:relative;
+
+    width:100%;
+    height:650px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.image-fond-2{
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.contenu-milieu{
+    position:relative;
+    z-index:2;
+    max-width:700px;
+    padding:20px;
+}
+
+.contenu-milieu h2{
+    color:#e5c06b;
+    font-size:45px;
+    margin-bottom:30px;
+}
+
+.contenu-milieu p{
+    color:white;
+    font-size:18px;
+    line-height:2;
+    margin-bottom:35px;
+}
+
+/* TROISIÈME PARTIE */
+
+.troisieme-partie{
+    position:relative;
+    width:100%;
+    padding-top:100px;
+    padding-bottom:100px;
+    text-align:center;
+}
+
+.fond-marbre{
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.couche-marbre{
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(20, 0, 30, 0.75);
+}
+
+.contenu-bas{
+    position:relative;
+
+    z-index:2;
+}
+
+.contenu-bas h2{
+    color:#e5c06b;
+
+    font-size:42px;
+
+    margin-bottom:20px;
+}
+
+.contenu-bas p{
+    color:#d7d0d0;
+
+    margin-bottom:40px;
+
+    font-size:17px;
+}
+
+/* IMAGES */
+
+.images-plats{
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-bottom:40px;
+
+    flex-wrap:wrap;
+}
+
+.images-plats img{
+    width:220px;
+    height:150px;
+
+    object-fit:cover;
+}
+
+
+/* ******** PPAGE MENU ******** */
+
+/* PAGE */
+
+.page-reservation{
+    position:relative;
+
+    width:100%;
+    min-height:100vh;
+
+    padding-bottom:80px;
+}
+
+/* IMAGE FOND */
+
+.image-fond{
+    position:absolute;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+/* COUCHE SOMBRE */
+
+.couche-sombre{
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(18, 5, 25, 0.72);
+}
+
+/* CONTENU */
+
+.contenu-reservation{
+    position:relative;
+
+    z-index:2;
+
+    padding-top:120px;
+
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* TITRE */
+
+.contenu-reservation h1{
+    color:#f1d38a;
+
+    font-size:65px;
+
+    margin-bottom:10px;
+}
+
+.contenu-reservation p{
+    color:#f1d38a;
+
+    font-size:18px;
+
+    margin-bottom:70px;
+}
+
+/* FORMULAIRE */
+
+.formulaire{
+    width:800px;
+}
+
+/* LIGNES */
+
+.ligne{
+    display:flex;
+    gap:40px;
+    margin-bottom:30px;
+}
+
+/* CHAMPS */
+
+.champ{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+.champ label{
+    color:#f1d38a;
+    margin-bottom:10px;
+    font-size:18px;
+}
+
+.champ input{
+    height:55px;
+    background:transparent;
+    border:1px solid #9f7a2d;
+    padding-left:15px;
+    color:white;
+    outline:none;
+    font-size:16px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+    cursor: pointer;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+    cursor: pointer;
+}
+
+
+/* MESSAGE */
+
+.champ-message{
+    display:flex;
+    flex-direction:column;
+
+    margin-top:10px;
+}
+
+.champ-message label{
+    color:#f1d38a;
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.champ-message textarea{
+    height:180px;
+    resize:none;
+    background:rgba(0,0,0,0.35);
+    border:1px solid #9f7a2d;
+    color:white;
+    padding:15px;
+    outline:none;
+    font-size:16px;
+}
+
+/* BOUTON */
+
+.bouton-centre{
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    margin-top:45px;
+}
+
+
+
+button:hover{
+    background:#69209b;
+}
