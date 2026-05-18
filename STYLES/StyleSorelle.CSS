@@ -361,6 +361,17 @@ input[type="time"]::-webkit-calendar-picker-indicator{
 }
 
 
+.champ select{
+    width:100%;
+    height:50px;
+    background:rgba(0,0,0,0.30);
+    border:1px solid #9e792c;
+    color:white;
+    padding-left:10px;
+    outline:none;
+}
+
+
 /* MESSAGE */
 
 .champ-message{
@@ -401,4 +412,41 @@ input[type="time"]::-webkit-calendar-picker-indicator{
 
 button:hover{
     background:#69209b;
+}
+
+/*Tableau des reservation*/
+
+.liste-reservation{
+
+    width:90%;
+
+    margin:auto;
+
+    margin-top:50px;
+
+    color:white;
+}
+
+.liste-reservation table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:rgba(0,0,0,0.5);
+}
+
+.liste-reservation th,
+.liste-reservation td{
+
+    border:1px solid #9e792c;
+
+    padding:15px;
+
+    text-align:center;
+}
+
+.liste-reservation th{
+
+    background:#9e792c;
 }
