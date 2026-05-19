@@ -258,7 +258,133 @@ INSERT INTO menu_de_commande
 VALUES
 (3, 9, 1, 1);
 COMMIT;
+                                       
 
 
-select * from menu_de_commande;
 
+
+BEGIN
+  ORDS.ENABLE_SCHEMA(
+    p_enabled => TRUE,
+    p_schema => 'RESTO',
+    p_url_mapping_type => 'BASE_PATH',
+    p_url_mapping_pattern => 'resto',
+    p_auto_rest_auth => FALSE
+  );
+END;
+/
+
+
+/* ACTIVATION DES TABLES */
+
+
+BEGIN
+
+    ORDS.ENABLE_OBJECT(
+
+        p_enabled => TRUE,
+
+        p_schema => 'RESTO',
+
+        p_object => 'CLIENT',
+
+        p_object_type => 'TABLE'
+
+    );
+
+END;
+
+/
+ 
+BEGIN
+
+    ORDS.ENABLE_OBJECT(
+
+        p_enabled => TRUE,
+
+        p_schema => 'RESTO',
+
+        p_object => 'COMMANDE',
+
+        p_object_type => 'TABLE'
+
+    );
+
+END;
+
+/
+ 
+BEGIN
+
+    ORDS.ENABLE_OBJECT(
+
+        p_enabled => TRUE,
+
+        p_schema => 'RESTO',
+
+        p_object => 'MENU',
+
+        p_object_type => 'TABLE'
+
+    );
+
+END;
+
+/
+ 
+BEGIN
+
+    ORDS.ENABLE_OBJECT(
+
+        p_enabled => TRUE,
+
+        p_schema => 'RESTO',
+
+        p_object => 'MENU_DE_COMMANDE',
+
+        p_object_type => 'TABLE'
+
+    );
+
+END;
+
+/
+ 
+BEGIN
+
+    ORDS.ENABLE_OBJECT(
+
+        p_enabled => TRUE,
+
+        p_schema => 'RESTO',
+
+        p_object => 'RESERVATION',
+
+        p_object_type => 'TABLE'
+
+    );
+
+END;
+
+/
+ 
+BEGIN
+
+    ORDS.ENABLE_OBJECT(
+
+        p_enabled => TRUE,
+
+        p_schema => 'RESTO',
+
+        p_object => 'RESTAURENT',
+
+        p_object_type => 'TABLE'
+
+    );
+
+END;
+
+/
+ 
+COMMIT;
+ 
