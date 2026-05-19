@@ -245,6 +245,7 @@ VALUES
 (3, 62.75, '789 Avenue du Parc, Montreal', 3, 1);
 
 
+
 INSERT INTO menu_de_commande
 (id_menu_de_commande, menu_id_plat, qte, commande_id_commande)
 VALUES
@@ -388,3 +389,5 @@ END;
 /
  
 COMMIT;
+
+

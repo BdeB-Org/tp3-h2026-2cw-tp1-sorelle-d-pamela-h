@@ -111,3 +111,33 @@ function supprimerPlat(id) {
         method: "DELETE"
     });
 }
+
+
+
+const BASE_URL = "http://localhost:8080/ords/resto/";
+ 
+async function getAll(table) {
+    const response = await fetch(`${BASE_URL}${table}/`);
+    const data = await response.json();
+    return data.items;
+}
+ 
+async function create(table, objet) {
+    return fetch(`${BASE_URL}${table}/`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(objet)
+    });
+}
+ 
+async function remove(table, id) {
+    return fetch(`${BASE_URL}${table}/${id}`, {
+        method: "DELETE"
+    });
+}
+ 
+
+
+
