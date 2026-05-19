@@ -112,9 +112,11 @@ function supprimerPlat(id) {
         method: "DELETE"
     });
 }
- 
+
+
 /* Pamela */
- 
+
+
 const BASE_URL = "http://localhost:8080/ords/resto/";
  
 async function getAll(table) {
