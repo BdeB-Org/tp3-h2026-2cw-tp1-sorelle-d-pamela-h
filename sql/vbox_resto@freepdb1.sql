@@ -388,4 +388,6 @@ END;
 /
  
 COMMIT;
+
+Select * from commande;
  
