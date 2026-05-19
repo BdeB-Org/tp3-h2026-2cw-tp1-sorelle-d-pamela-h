@@ -40,3 +40,34 @@ function getRestaurent() {
 }
 
 
+
+
+
+function getReservation() {
+
+    return fetch("http://localhost:8080/ords/resto/reservation/")
+
+    .then(reponse => reponse.json())
+
+    .then(data => data.items);
+}
+
+
+
+
+
+
+function supprimerReservation(id) {
+
+    fetch(`http://localhost:8080/ords/resto/reservation/${id}`, {
+
+        method: "DELETE"
+    })
+
+    .then(() => {
+
+        alert("Réservation supprimée");
+
+        chargerReservation();
+    });
+}
