@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - VELUTO</title>
+    <link rel="stylesheet" href="css/StylePamela.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="/images/logo.png" alt="Logo Veluto" class="logo">
+    </div>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="menu.html">Menu</a>
+        <a href="commande.html">Commande</a>
+    </nav>
+</header>
+
+<main>
+    <section class="menu-title">
+        <h1>MENU</h1>
+        <p>Consultez les plats disponibles pour prendre une commande.</p>
+    </section>
+
+    <section class="menu-table-section">
+        <h2>Plats disponibles</h2>
+
+        <p id="messageMenu"></p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nom du plat</th>
+                    <th>Catégorie</th>
+                    <th>Prix</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="tableMenu">
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<script src="js/api.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    background-image: url("/images/fondMenu.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #f5e6c8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(20, 10, 20, 0.75);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #f5e6c8;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c89bff;
+}
+
+/* TITRE */
+.menu-title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.menu-title h1 {
+    font-size: 60px;
+    margin: 0;
+    letter-spacing: 4px;
+    color: #f8e7c7;
+}
+
+
+.menu-form {
+    width: 80%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: rgba(40, 20, 50, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.menu-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #f8e7c7;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+button {
+    grid-column: span 2;
+    padding: 14px;
+    background: #6a2fa0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #8e44d8;
+}
+
+#messageMenu {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+
+.menu-table-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: rgba(35, 15, 45, 0.85);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+}
+
+.menu-table-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: rgba(106, 47, 160, 0.9);
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+}
+
+td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+td button {
+    background-color: #a12f5f;
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+td button:hover {
+    background-color: #d23b78;
+}
+
+
+@media (max-width: 900px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        grid-column: span 1;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-title h1 {
+        font-size: 42px;
+    }
+}
+.btn-commander {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #6a2fa0;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn-commander:hover {
+    background-color: #8e44d8;
+}
