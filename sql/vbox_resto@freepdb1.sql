@@ -179,5 +179,56 @@ COMMIT;
 
 -- Partie Pamela ----
 
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (1, 'Spaghetti bolognaise', 'Plats', 18.99);
+
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (2, 'Pizza Margherita', 'Plats', 16.99);
+
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (3, 'Lasagnes traditionnelles', 'Plats', 20.99);
+
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (4, 'Risotto aux champignons', 'Plats', 19.99);
+
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (5, 'Salade caprese', 'Entrees', 12.99);
+
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (6, 'Bruschetta aux tomates', 'Entrees', 10.99);
+
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (7, 'Carpaccio de boeuf', 'Entrees', 15.99);
+
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (8, 'Soupe minestrone', 'Entrees', 9.99);
+
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (9, 'Tiramisu traditionnel', 'Desserts', 8.99);
+
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (10, 'Cannoli siciliens', 'Desserts', 7.99);
+
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (11, 'Panna Cotta aux fruits rouges', 'Desserts', 8.50);
+
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (12, 'Affogato', 'Desserts', 6.99);
+
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (13, 'Vin rouge italien', 'Boissons', 11.99);
+
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (14, 'Vin blanc italien', 'Boissons', 11.99);
+
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (15, 'Prosecco', 'Boissons', 12.99);
+
+INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
+VALUES (16, 'Spritz', 'Boissons', 10.99);
+
+COMMIT;
+
+
 
 
