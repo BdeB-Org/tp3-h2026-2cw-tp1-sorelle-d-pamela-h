@@ -1,3 +1,4 @@
+/* sorelle */
 const URL_RESERVATION = "http://localhost:8080/ords/resto/reservation/";
 
 const URL_CLIENT = "http://localhost:8080/ords/resto/client/";
@@ -112,7 +113,7 @@ function supprimerPlat(id) {
     });
 }
 
-
+/* Pamela */
 
 const BASE_URL = "http://localhost:8080/ords/resto/";
  
