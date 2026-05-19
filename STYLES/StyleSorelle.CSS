@@ -450,3 +450,166 @@ button:hover{
 
     background:#9e792c;
 }
+
+
+
+.page-menu {
+
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image-fond {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.couche-sombre {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+.contenu-menu {
+
+    width: 100%;
+    max-width: 1000px;
+    color: #f5d27a;
+    text-align: center;
+    padding: 40px;
+}
+
+.contenu-menu h1 {
+
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.contenu-menu p {
+
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.formulaire-menu {
+
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.formulaire-menu .ligne {
+
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.formulaire-menu .champ {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaire-menu label {
+
+    color: #f5d27a;
+    margin-bottom: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.formulaire-menu input {
+
+    padding: 16px;
+    background: transparent;
+    border: 1px solid #c79a2b;
+    color: white;
+    outline: none;
+}
+
+.formulaire-menu input::placeholder {
+
+    color: rgba(255,255,255,0.6);
+}
+
+.bouton-centre {
+
+    margin-top: 30px;
+    text-align: center;
+}
+
+.bouton-centre button {
+
+    background: #b08a2a;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.bouton-centre button:hover {
+
+    background: darkred;
+}
+
+.liste-menu {
+
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    color: white;
+}
+
+.liste-menu h2 {
+
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f5d27a;
+    font-size: 40px;
+}
+
+.liste-menu table {
+
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(0,0,0,0.7);
+}
+
+.liste-menu th {
+
+    background: #b08a2a;
+    color: white;
+    padding: 15px;
+}
+
+.liste-menu td {
+
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 15px;
+    text-align: center;
+}
+
+.liste-menu button {
+
+    background: #b08a2a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}

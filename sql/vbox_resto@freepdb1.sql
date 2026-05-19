@@ -388,6 +388,9 @@ END;
 /
  
 COMMIT;
+<<<<<<< HEAD
 
 Select * from commande;
  
+=======
+>>>>>>> 76bf3ccb4ba3b0691ce6f07c415f8913ad7340a6
