@@ -4,17 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des commandes</title>
     <link rel="stylesheet" href="/STYLES/StylePamela.css">
-  
+ 
 </head>
 
-<!-- Page de Pamela -->
-
  <header class="barre-haut">
-
+ 
         <div class="logo">
             <img src="../img/logo-removebg.png" alt="">
         </div>
-
+ 
         <div class="liens-page">
             <a href="../index.html">Accueil</a>
             <a href="../HTML/apropos.html">À propos</a>
@@ -23,50 +21,50 @@
             <a href="../HTML/reservation.html">Réservation</a>
             <a href="../HTML/commande.html">Commande</a>
         </div>
-
+ 
     </header>
-
+ 
     <header>
     <h1>Gestion des commandes</h1>
-
+ 
 </header>
-
-
+ 
+ 
 <body>
-
-
+ 
+ 
 <main>
-
+ 
     <section>
         <h2>Ajouter une commande</h2>
-
+ 
         <form id="formCommande">
-
+ 
             <label>ID commande</label>
             <input type="number" id="id_commande" required>
-
+ 
             <label>Prix</label>
             <input type="number" id="prix" step="0.01" required>
-
+ 
             <label>Adresse livraison / numéro de table</label>
             <input type="text" id="adresse_livraison" required>
-
+ 
             <label>ID client</label>
             <input type="number" id="client_id_client" required>
-
+ 
             <label>ID restaurant</label>
             <input type="number" id="restaurent_id_restaurent" required>
-
+ 
             <button type="submit">Ajouter</button>
-
+ 
         </form>
-
+ 
         <p id="messageCommande"></p>
     </section>
-
+ 
     <section>
         <h2>Liste des commandes</h2>
-
+ 
         <table border="1">
             <thead>
                 <tr>
@@ -78,15 +76,16 @@
                     <th>Action</th>
                 </tr>
             </thead>
-
+ 
             <tbody id="tableCommande"></tbody>
         </table>
     </section>
-
+ 
 </main>
-
+ 
 <script src="../js/api.js"></script>
 <script src="../js/commande.js"></script>
-
+ 
 </body>
 </html>
+ 

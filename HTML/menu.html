@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ 
     <title>Menu - VELUTO</title>
    <link rel="stylesheet" href="/STYLES/StyleSorelle.CSS">
-
+ 
 </head>
+
 
 
 <!-- Page de Sorelle -->
 
-    <header class="barre-haut">
 
+    <header class="barre-haut">
+ 
         <div class="logo">
             <img src="../img/logo-removebg.png" alt="">
         </div>
-
+ 
         <div class="liens-page">
             <a href="../index.html">Accueil</a>
             <a href="../HTML/apropos.html">À propos</a>
@@ -27,89 +29,89 @@
             <a href="../HTML/reservation.html">Réservation</a>
             <a href="../HTML/commande.html">Commande</a>
         </div>
-
+ 
     </header>
-
-
+ 
+ 
 <body>
-
-
+ 
+ 
     <!-- PAGE -->
-
+ 
     <div class="page-menu">
-
+ 
         <!-- IMAGE FOND -->
-
+ 
         <img src="../img/font pour page menu.png" class="image-fond" alt="">
-
+ 
         <!-- COUCHE SOMBRE -->
-
+ 
         <div class="couche-sombre"></div>
-
+ 
         <!-- CONTENU -->
-
+ 
         <div class="contenu-menu">
-
+ 
             <h1 style="margin-top: 100px;">Gestion du Menu</h1>
-
+ 
             <p>
                 Ajoutez les plats du restaurant
             </p>
-
+ 
             <!-- FORMULAIRE -->
-
+ 
             <div class="formulaire-menu">
-
+ 
                 <div class="ligne">
-
+ 
                     <div class="champ">
                         <label>Nom du plat</label>
                         <input type="text" id="nomPlat" placeholder="Nom du plat">
                     </div>
-
+ 
                     <div class="champ">
                         <label>Catégorie</label>
                         <input type="text" id="categorie" placeholder="Catégorie">
                     </div>
-
+ 
                 </div>
-
+ 
                 <div class="ligne">
-
+ 
                     <div class="champ">
                         <label>Prix</label>
                         <input type="number" id="prix" placeholder="Prix">
                     </div>
-
-
+ 
+ 
                 </div>
-
+ 
                 <!-- BOUTON -->
-
+ 
                 <div class="bouton-centre">
-
+ 
                     <button id="btnAjouter">
                         — Ajouter le plat —
                     </button>
-
+ 
                 </div>
-
+ 
             </div>
-
+ 
         </div>
-
+ 
     </div>
-
+ 
     <!-- TABLEAU -->
-
+ 
     <div class="liste-menu">
-
+ 
         <h2>Liste des plats</h2>
-
+ 
         <table>
-
+ 
             <thead>
-
+ 
                 <tr>
                     <th>ID</th>
                     <th>Nom du plat</th>
@@ -117,20 +119,21 @@
                     <th>Prix</th>
                     <th>Action</th>
                 </tr>
-
+ 
             </thead>
-
+ 
             <tbody id="tableMenu">
-
+ 
             </tbody>
-
+ 
         </table>
-
+ 
     </div>
-
+ 
     <script src="../JS/api.js"></script>
     <script src="../JS/scriptSorelle.js"></script>
-
+ 
 </body>
-
+ 
 </html>
+ 
