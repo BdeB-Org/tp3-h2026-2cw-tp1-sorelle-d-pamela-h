@@ -71,3 +71,43 @@ function supprimerReservation(id) {
         chargerReservation();
     });
 }
+
+
+
+function getMenu() {
+
+    return fetch("http://localhost:8080/ords/resto/menu/")
+
+    .then(response => response.json())
+
+    .then(data => data.items);
+}
+
+
+
+function ajouterMenu(menu) {
+
+    return fetch("http://localhost:8080/ords/resto/menu/", {
+
+        method: "POST",
+
+        headers: {
+
+            "Content-Type": "application/json"
+        },
+
+        body: JSON.stringify(menu)
+    })
+
+    .then(response => response.json());
+}
+
+
+
+function supprimerPlat(id) {
+
+    return fetch(`http://localhost:8080/ords/resto/menu/${id}`, {
+
+        method: "DELETE"
+    });
+}
