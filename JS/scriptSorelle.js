@@ -10,7 +10,7 @@ const boutonReservation = document.getElementById("btnReservation");
 
 if(boutonReservation){
 
-    bouton.addEventListener("click", envoyerReservation);
+    boutonReservation.addEventListener("click", envoyerReservation);
 }
 
 
