@@ -6,10 +6,16 @@ const bouton = document.querySelector("button");
 bouton.addEventListener("click", envoyerReservation);
 
 
+const tableReservation = document.getElementById("tableReservation");
+console.log(tableReservation);
+chargerReservation();
+
 
 
 
 function envoyerReservation(event) {
+
+
 
     event.preventDefault();
 
@@ -30,8 +36,6 @@ const client = {
 
     telephone : document.querySelectorAll("input")[2].value
 };
-
-
 
 
 
@@ -90,3 +94,48 @@ function chargerRestaurent() {
         });
     });
 }
+
+
+
+
+function chargerReservation() {
+
+    getReservation()
+
+    .then(reservations => {
+
+        console.log(reservations);
+
+        tableReservation.innerHTML = "";
+
+        reservations.forEach(reservation => {
+
+            tableReservation.innerHTML += `
+
+                <tr>
+
+                    <td>${reservation.client_id_client}</td>
+
+                    <td>${reservation.date_reservation.substring(0,10)}</td>
+
+                   <td>${reservation.heure.substring(11,16)}</td>
+
+                    <td>${reservation.nbr_personne}</td>
+
+                    <td>${reservation.restaurent_id_restaurent}</td>
+
+                    <td>
+                    
+                    <button onclick="supprimerReservation(${reservation.id_reservation})">
+                        Supprimer
+                    </button>
+                     </td>
+
+                </tr>
+
+            `;
+        });
+    });
+}
+
+
