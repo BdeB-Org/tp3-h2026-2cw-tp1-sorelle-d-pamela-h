@@ -227,8 +227,38 @@ VALUES (15, 'Prosecco', 'Boissons', 12.99);
 INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
 VALUES (16, 'Spritz', 'Boissons', 10.99);
 
+INSERT INTO commande
+(id_commande, prix, adresse_livraison, client_id_client, restaurent_id_restaurent)
+VALUES
+(1, 45.99, '123 Rue Sainte-Catherine, Montreal', 1, 1);
+
+INSERT INTO commande
+(id_commande, prix, adresse_livraison, client_id_client, restaurent_id_restaurent)
+VALUES
+(2, 28.50, '456 Boulevard Saint-Laurent, Montreal', 2, 1);
+
+INSERT INTO commande
+(id_commande, prix, adresse_livraison, client_id_client, restaurent_id_restaurent)
+VALUES
+(3, 62.75, '789 Avenue du Parc, Montreal', 3, 1);
+
+
+INSERT INTO menu_de_commande
+(id_menu_de_commande, menu_id_plat, qte, commande_id_commande)
+VALUES
+(1, 1, 2, 1);
+
+INSERT INTO menu_de_commande
+(id_menu_de_commande, menu_id_plat, qte, commande_id_commande)
+VALUES
+(2, 5, 1, 1);
+
+INSERT INTO menu_de_commande
+(id_menu_de_commande, menu_id_plat, qte, commande_id_commande)
+VALUES
+(3, 9, 1, 1);
 COMMIT;
 
 
-
+select * from menu_de_commande;
 
