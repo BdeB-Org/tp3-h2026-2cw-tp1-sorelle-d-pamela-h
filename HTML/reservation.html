@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../STYLES/StyleSorelle.CSS" />
+</head>
+
+
+<header class="barre-haut">
+
+    <div class="logo">
+        <img src="../img/logo-removebg.png" alt="">
+    </div>
+
+    <div class="liens-page">
+        <a href="../index.html">Accueil</a>
+        <a href="../HTML/apropos">À propos</a>
+        <a href="../HTML/menu.html">Menu</a>
+        <a href="../HTML/restaurent">Restaurant</a>
+        <a href="../HTML/reservation">Réservation</a>
+    </div>
+
+</header>
+
+
+
+<body>
+    
+      <!-- PAGE -->
+
+    <div class="page-reservation">
+
+        <!-- FOND -->
+
+        <img src="../img/font pour page menu.png" class="image-fond" alt="">
+
+        <!-- COUCHE SOMBRE -->
+
+        <div class="couche-sombre"></div>
+
+        <!-- CONTENU -->
+
+        <div class="contenu-reservation">
+
+            <h1 style="margin-top: 100px;">Réservation</h1>
+
+            <p>
+                Une expérience Italienne élégante vous attend
+            </p>
+
+            <!-- FORMULAIRE -->
+
+            <div class="formulaire">
+
+                <div class="ligne">
+
+                    <div class="champ">
+                        <label>Prénom</label>
+                        <input type="text" placeholder="Prénom">
+                    </div>
+
+                    <div class="champ">
+                        <label>Mail</label>
+                        <input type="email" placeholder="Mail">
+                    </div>
+
+                </div>
+
+                <div class="ligne">
+
+                    <div class="champ">
+                        <label>Téléphone</label>
+                        <input type="text" placeholder="Téléphone">
+                    </div>
+
+                    <div class="champ">
+                        <label>Nombre de personne</label>
+                        <input type="text" placeholder="Nombre de personnes">
+                    </div>
+
+                </div>
+
+                <div class="ligne">
+
+                    <div class="champ">
+                        <label>Date</label>
+                        <input type="date" id="date">
+                    </div>
+
+                    <div class="champ">
+                        <label>Heure</label>
+                       <input type="time" id="heure">
+                    </div>
+
+                </div>
+
+                <div class="champ">
+                    <label>Restaurant</label>
+                    <select id="resto"> </select>
+                </div>
+
+
+            
+
+                <!-- MESSAGE -->
+
+                <div class="champ-message">
+
+                    <label>
+                        Demande spécial (optional)
+                    </label>
+
+                    <textarea></textarea>
+
+                </div>
+
+                <!-- BOUTON -->
+
+                <div class="bouton-centre">
+
+                    <button>
+                        — Réserver Maintenant —
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="../JS/api.js"></script>
+    <script src="../JS/scriptSorelle.js"></script>
+   
+</body>
+</html>
