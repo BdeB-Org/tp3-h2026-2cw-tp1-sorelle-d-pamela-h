@@ -179,6 +179,8 @@ COMMIT;
 
 -- Partie Pamela ----
 
+-- MENU --
+
 INSERT INTO menu (id_plat, nom_plat, categorie, prix_plat)
 VALUES (1, 'Spaghetti bolognaise', 'Plats', 18.99);
 
@@ -229,6 +231,5 @@ VALUES (16, 'Spritz', 'Boissons', 10.99);
 
 COMMIT;
 
-
-
+ 
 
